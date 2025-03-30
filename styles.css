@@ -3,7 +3,7 @@
 }
 :root {
     --navBarHeight: 5rem;
-    --sideBarWidth: 7rem;
+    --sideBarWidth: 15rem;
 }
 html, body{
     font-family: 'Times New Roman';
@@ -102,12 +102,16 @@ main {
 }
 
 img.profile {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     object-fit: cover;
+    text-align: center;
     border-radius: 50%;
     overflow: hidden;
     width: 20rem;
     height: 20rem;
-    margin: 1rem;
     border: 7px solid #c6a362;
 }
 
@@ -121,7 +125,7 @@ img.profile {
   }
 
   div.homeIntro {
-    justify-self: center;
+    margin: auto;
     padding: 1rem;
     width: 23rem;
     background-color: wheat;
@@ -137,12 +141,49 @@ img.profile {
     justify-self: center;
   }
   
-  div.homeDescription {
+  div.selfDescription {
     background-color: wheat;
-    justify-self: center;
+    box-shadow: 4px 4px 5px 3px #333333;
     margin: 2rem;
     padding: 1rem;
     width: 25rem;
+  }
+
+  div.selfDescription strong {
+    font-size: 1.1rem;
+    text-decoration: underline;
+  }
+
+  div.contactDetails {
+    justify-self: center;
+    width: 50%;
+    min-width: 30rem;
+    background-color: wheat;
+    box-shadow: 5px 5px 5px 5px #333333;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  div.contactDetails h3 {
+    text-decoration: none;
+    font-family: "Social Media Circled";
+    background: none;
+    font-size: 4rem;
+    font-weight: 1;
+  }
+
+  div.contactDetails a {
+    color:#000000;
+  }
+
+  div.contactDetails a:hover {
+    color: #c6a362
+  }
+
+  div.contactDetails > section.contactDetails {
+    display: grid;
+    grid-template-columns: 6rem auto;
+    align-items: center;
   }
 
   div.gallery {
@@ -157,7 +198,7 @@ img.profile {
     background-color: wheat;
   }
   div.gallery img {
-    width: 10rem;
+    max-height: 15rem;
   }
 
   ::-webkit-scrollbar-thumb {
